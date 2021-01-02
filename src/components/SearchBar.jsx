@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import getCities  from './actions/actions'
+import {getCities}  from './actions/actions'
+import'./SearchBar.css'
 
 function SearchBar(props) {
   const [city, setCity] = useState("")
   return (
-    <form onSubmit={(e) => {
+    <form id="form" onSubmit={(e) => {
       e.preventDefault();
       props.getCities(city);
     }}>
