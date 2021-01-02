@@ -18,3 +18,56 @@
   margin-top: 0px !important;
   padding-top: 0px !important;
 }
+#container{
+  background-color: white;
+  border-radius:10px;
+  
+}
+.row{
+  display: flex;
+  justify-content:space-around;
+}
+.card{
+ width:40%;
+ margin-left: auto;
+ margin-right:auto;
+}
+.card-title{
+  margin-top:0px;
+  margin-left: 20px;
+  color:black;
+  font-size: 20px;
+}
+.temp-min{
+  color:black;
+}
+.temp-max{
+  color:black;
+}
+.icono-clima{
+  margin-bottom: 10px;
+  background:black;
+  border-radius: 50%;
+}
+#tempMin{
+  font-size:40px;
+  margin:0px;
+ 
+}
+#tempMax{
+  font-size:40px;
+  margin:0px;
+}
+.tituloTemp{
+   margin:0px
+}
+.button{
+  background:#DC3545;
+  border-radius: 5px;
+  margin-top:10px;
+  color:white;
+  border-width:0px;
+  width: 30px;
+  height: 30px;
+  
+}

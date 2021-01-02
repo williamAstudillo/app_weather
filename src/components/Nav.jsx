@@ -5,14 +5,14 @@ import Logo from '../img/logoHenry.png'
 import SearchBar from './SearchBar.jsx';
 export default function Nav() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar">
       <Link to='/'>
-        <span className="navbar-brand">
+        <span className="navbar-title">
           <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
           Henry - Weather App
         </span>
       </Link>
-        <SearchBar/>
+        <SearchBar id="searchBar"/>
     </nav>
   );
 };

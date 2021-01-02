@@ -1,34 +1,36 @@
 import React from 'react';
 import './Card.css';
 import { connect } from "react-redux";
-import  getCities  from '../components/actions/actions'
-import { Link, Route } from 'react-router-dom';
+import { deleteCities}  from '../components/actions/actions'
+import { Link} from 'react-router-dom';
 
 
- function Card(props) {
-  
+function Card({ deleteCities,ciudades}) {
+  const onClose=(e)=>{
+    deleteCities(e.target.name)
+  }
   return (
     <div className="card">
-      {props.ciudades && props.ciudades.map((ciudad)=>
-      <div>
+      {ciudades[0] && ciudades.map((ciudad,i)=>
+      <div key={i} id="container">
+    
       <div id="closeIcon" className="row">
-        {/* <button onClick={onClose} className="btn btn-sm btn-danger">X</button> */}
+        <button name= {ciudad.name}onClick={onClose} className="button">X</button>
       </div>
       <div className="card-body">
             <Link to={`/ciudad/${ciudad.id}`} >
           <h5 className="card-title">{ciudad.name}</h5>
         </Link>
         <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p>Min</p>
-            <p>{ciudad.main.temp_min}°</p>
-            
+          <div className="temp-min">
+            <p className="tituloTemp">Min</p>
+            <p id="tempMin">{ciudad.main.temp_min}°</p>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
-            <p>Max</p>
-            {ciudad.main.temp_max}
+          <div className="temp-max">
+            <p className="tituloTemp">Max</p>
+                <p id="tempMax">{ciudad.main.temp_max}°</p>
           </div>
-          <div className="col-sm-4 col-md-4 col-lg-4">
+          <div className="icono-clima">
             <img className="iconoClima" width="80" height="80" src={`http://openweathermap.org/img/wn/${ciudad.weather[0].icon}@2x.png`} alt="" />
           </div>
         </div>
@@ -47,7 +49,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getCities: ciudad => dispatch(getCities(ciudad)),
+    deleteCities: ciudad => dispatch(deleteCities(ciudad)),
   };
 }
 
