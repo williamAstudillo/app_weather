@@ -1,3 +1,2 @@
-<<<<<<< HEAD
 # App wheather 
 
