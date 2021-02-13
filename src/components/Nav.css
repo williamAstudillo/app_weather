@@ -1,5 +1,5 @@
 #logoHenry {
-  margin-right: 20px;
+  margin:10px
 }
 .navbar{
   background-color: #485D96;
@@ -9,4 +9,8 @@
 }
 .navbar-title{
   color:white;
+  display: flex;
+}
+#title{
+  margin: 12px;
 }

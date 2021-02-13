@@ -9,7 +9,9 @@ export default function Nav() {
       <Link to='/'>
         <span className="navbar-title">
           <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
+          <div id='title'>
           Henry - Weather App
+          </div>
         </span>
       </Link>
         <SearchBar id="searchBar"/>

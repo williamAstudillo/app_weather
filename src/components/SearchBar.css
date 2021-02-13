@@ -1,5 +1,54 @@
 #form{
-  margin-right:80px;
+margin-right:80px;
  margin-top:auto;
  margin-bottom: auto;
 }
+#form input{
+  border-top:0.5px solid ;
+  border-radius: 5px;
+}
+@media  (max-width: 600px) {
+  #form input{
+  width: 35%;
+  font-size: 12px;
+  
+  }
+  #form{
+    margin:auto;
+    display: flex;
+   
+    justify-content:flex-end;
+   }
+   #logoHenry{
+    margin:9px;
+   } 
+   #title{
+     display:none;
+   }
+   #container{
+     width:80%;
+    
+   }
+   .card{
+    width:90%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+   }  
+   #button-input{
+    height: 30px;
+    margin: 2px;
+   }
+   #input-text{
+    height: 25px;
+    margin: 2px;
+   }
+}
+ #button-input{
+    height: 30px;
+    margin: 2px;
+   }
+   #input-text{
+    height: 25px;
+    margin: 2px;
+   }

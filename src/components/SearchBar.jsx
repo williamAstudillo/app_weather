@@ -1,22 +1,29 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { connect } from "react-redux";
 import {getCities}  from './actions/actions'
 import'./SearchBar.css'
 
 function SearchBar(props) {
   const [city, setCity] = useState("")
+  useEffect(() => {
+    if(!props.ciudades[0]){
+      props.getCities('Bogotá');
+    }
+  })
   return (
     <form id="form" onSubmit={(e) => {
       e.preventDefault();
       props.getCities(city);
+      setCity('');
     }}>
       <input
+        id="input-text"
         type="text"
         placeholder="Ciudad..."
         value={city}
         onChange={e => setCity(e.target.value)}
       />
-      <input type="submit" value="Agregar" />
+      <input id="button-input" type="submit" value="Agregar" />
     </form>
   );
 }
