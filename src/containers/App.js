@@ -7,7 +7,7 @@ import Ciudad from '../components/Ciudad'
 function App() {
   return (
     <div> 
-      <Route  path="/app_weather" component={Nav} />
+      <Route  path="/" component={Nav} />
       <Route exact path="/app_weather" component={Card} />
       <Route exact path="/ciudad/:id" component={Ciudad} />
     </div>

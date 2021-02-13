@@ -6,7 +6,7 @@ import SearchBar from './SearchBar.jsx';
 export default function Nav() {
   return (
     <nav className="navbar">
-      <Link to='/'>
+      <Link to='/app_weather'>
         <span className="navbar-title">
           <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
           <div id='title'>
