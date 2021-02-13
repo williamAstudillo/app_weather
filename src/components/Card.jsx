@@ -18,9 +18,9 @@ function Card({ deleteCities,ciudades}) {
         <button name= {ciudad.name}onClick={onClose} className="button">X</button>
       </div>
       <div className="card-body">
-            <Link to={`/ciudad/${ciudad.id}`} >
+            {/* <Link to={`/ciudad/${ciudad.id}`} > */}
           <h5 className="card-title">{ciudad.name}</h5>
-        </Link>
+        {/* </Link> */}
         <div className="row">
           <div className="temp-min">
             <p className="tituloTemp">Min</p>
