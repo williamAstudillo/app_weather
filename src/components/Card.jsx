@@ -9,7 +9,7 @@ function Card({ deleteCities,ciudades}) {
   const onClose=(e)=>{
     deleteCities(e.target.name)
   }
-  return (
+    return (
     <div className="card">
       {ciudades[0] && ciudades.map((ciudad,i)=>
       <div key={i} id="container">
