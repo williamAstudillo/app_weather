@@ -1,12 +1,11 @@
 # App weather 
-## Instrucciones para correr el proyecto
-Desde la carpeta raíz del repositorio puedes ejecutar el siguiente comando:
-
+## Get started 
 ```shell
 npm install
 npm start
 ```
-El proyecto correra en http://localhost:3000.
+It will runs on  http://localhost:3000.
 
+I want to invited you to look at the following link [app_weather](https://williamastudillo.github.io/app_weather/)
 
 ![Alt Text](https://media.giphy.com/media/ARqhhqcZXKzhS7xZUq/giphy.gif)
